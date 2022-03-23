@@ -28,7 +28,7 @@ twitter_username: adamsvoboda
 github_username:  adamsvoboda
 
 # Build settings
-theme: minima
+remote_theme: abhinavs/moonwalk
 plugins:
   - jekyll-feed
 
