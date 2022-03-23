@@ -55,7 +55,6 @@ highlighter: rouge
 
 plugins:
   - jekyll-feed
-  - jekyll-soopr-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
