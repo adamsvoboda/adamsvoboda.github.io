@@ -17,6 +17,12 @@ footer_entries:
   - title: github
     url: https://github.com/adamsvoboda
 
+  - title: linkedin
+    url: https://www.linkedin.com/in/adam-svoboda
+
+  - title: htb
+    url: https://app.hackthebox.com/profile/323520
+
   - title: feed
     url: feed.xml
 
