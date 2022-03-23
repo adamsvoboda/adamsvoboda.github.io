@@ -27,6 +27,10 @@ url: "https://adamsvoboda.net" # the base hostname & protocol for your site, e.g
 twitter_username: adamsvoboda
 github_username:  adamsvoboda
 
+twitter:
+    username: adamsvoboda # update or delete this
+    card: summary_large_image
+
 # Build settings
 remote_theme: abhinavs/moonwalk
 theme_config:
@@ -46,6 +50,8 @@ theme_config:
   # options for "home" page
   home:
     title_blog: Adam Svoboda's Blog
+
+highlighter: rouge
 
 plugins:
   - jekyll-feed
