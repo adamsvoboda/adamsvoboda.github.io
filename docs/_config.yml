@@ -50,6 +50,7 @@ theme_config:
   # options for "home" page
   home:
     title_blog: Posts
+    title_projects: Projects
 
 highlighter: rouge
 
