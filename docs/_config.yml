@@ -21,7 +21,7 @@
 title: Adam Svoboda
 email: adams@fastmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Ramblings on Cybersecurity
+  Ramblings on Cybersecurity, Red-Teaming & Breaking Stuff.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://adamsvoboda.net" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: adamsvoboda
@@ -38,7 +38,7 @@ theme_config:
   appearance_toggle: true # if appearance can be switched by user
   back_home_text: "../" # customize text for homepage link in post layout
   date_format: "%Y-%m-%d" # customize how date is formatted
-  show_description: false # show blog description
+  show_description: true # show blog description
   show_navbar: true # show horizontal navbar
   show_footer: true # show footer links in home page,add in _data/home.yml
   show_copyright: false # show copyright notice in footer
@@ -49,7 +49,7 @@ theme_config:
   show_misc_list: false # show generic vertical list for misc details, add _data/home.yml
   # options for "home" page
   home:
-    title_blog: Adam Svoboda
+    title_blog: Posts
 
 highlighter: rouge
 
