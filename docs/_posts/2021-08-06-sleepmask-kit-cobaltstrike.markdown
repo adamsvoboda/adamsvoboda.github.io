@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sleeping with a Mask On (Cobalt Strike)"
-date:   2021-06-08 00:00:00 -0500
+date:   2021-08-06 01:30:00 -0600
 categories: red-team pentest cobalt-strike c2
 permalink: /sleeping-with-a-mask-on-cobaltstrike/
 ---
