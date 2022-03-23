@@ -32,7 +32,7 @@ Personally, I set the disk space to just over 100GB as the wordlists I'll be dow
 
 **4. Rent an instance that looks juicy.**
 
-[image]
+![Yum!](/assets/images/vastai_2.png)
 
 **5. Navigate to the [Instances](https://vast.ai/console/instances/) page and wait for your instance to become available.**
 
@@ -41,7 +41,7 @@ Personally, I set the disk space to just over 100GB as the wordlists I'll be dow
 **NOTE** 
 You must configure an SSH key in the Vast.ai Account page, and may need append `-i ~/.ssh/<your-key>` to the ssh command to use key auth.
 
-[image]
+![Connection String](/assets/images/vastai_3.png)
 
 After connecting over SSH you will be dropped into a tmux session of your instance, running the docker container you chose in the config options.
 
@@ -61,9 +61,9 @@ I placed my example hashes into a file named `ntlm-hashes.txt` and started hashc
 
 `hashcat -m 1000 -O -w4 ntlm-hashes.txt weakpass_3 -o cracked.txt`
 
-[image]
+![Warming up the engines...](/assets/images/vastai_4.png)
 
-[image]
+![Not too shabby!](/assets/images/vastai_5.png)
 
 **8. Don't forget to destroy your running instances when finished!**
 
