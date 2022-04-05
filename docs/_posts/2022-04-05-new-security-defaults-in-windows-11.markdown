@@ -51,13 +51,22 @@ Adam Chester (@_xpn_) demonstrates how to harvest these secrets from a Credentia
 
 Be aware of adversaries leveraging WDigest to circumvent the secure isolation of these secrets within your organization.
 
-# LSASS Protection with ASR
+# Attack Surface Reduction
 
 Attack Surface Reduction (ASR) is a "feature that helps prevent actions and apps that are typically used by exploit-seeking malware to infect machines." One example of this would be an adversary attempting to dump the process memory of `lsass.exe` to obtain credentials or other secrets. 
 
 | The default state for the ASR rule “Block credential stealing from the Windows local security authority subsystem (lsass.exe)” will change from Not Configured to Configured and the default mode set to Block.
 
-Furthermore you will only be able to load signed, trusted code into the LSA as plug-ins.
+Check out the full list of [pre-defined ASR rules here](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference?view=o365-worldwide).
+
+This also includes things such as:
+- Blocking untrusted/unsigned processes that run from USB
+- Blocking JS/VBS from launching downloaded executable content
+- Blocking office applications from creating executable content
+- Blocking process creations originating from PsExec/WMI commands
+- Blocking Win32 API calls from office macros
+
+_I'm not sure which of these are actually switching to enabled by default..., other than the LSA block rule mentioned above._
 
 ## Impact
 
@@ -91,5 +100,3 @@ And compare that with the "Default Windows Mode"
 Organizations can easily prevent the execution of unsigned or unreputable binaries using WDAC, restricting the flexibility of the adversary playbook for delivering malicious payloads to endpoints. 
 
 WDAC/AppLocker is still not a silver-bullet as it may be possible for adversaries to use LOLBINs and AppLocker bypass techniques to work around these limitations. Many of these LOLBINs are already included on the Microsoft recommended block rules [list here](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-block-rules).
-
-
