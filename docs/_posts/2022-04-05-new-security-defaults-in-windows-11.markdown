@@ -51,7 +51,7 @@ Adam Chester (@_xpn_) demonstrates how to harvest these secrets from a Credentia
 
 Be aware of adversaries leveraging WDigest to circumvent the secure isolation of these secrets within your organization.
 
-# Attack Surface Reduction
+# Attack Surface Reduction Enabled for LSA
 
 Attack Surface Reduction (ASR) is a "feature that helps prevent actions and apps that are typically used by exploit-seeking malware to infect machines." One example of this would be an adversary attempting to dump the process memory of `lsass.exe` to obtain credentials or other secrets. 
 
