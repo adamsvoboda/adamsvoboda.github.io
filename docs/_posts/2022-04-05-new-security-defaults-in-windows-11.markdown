@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Brief Look at New Security Defaults in Windows 11"
+title:  "Some New Security Defaults Coming to Windows 11"
 date:   2022-04-05 01:30:00 -0600
 categories: security windows windows-11 lsass hvci credguard asr red-team blue-team
 permalink: /new-security-defaults-in-windows-11/
