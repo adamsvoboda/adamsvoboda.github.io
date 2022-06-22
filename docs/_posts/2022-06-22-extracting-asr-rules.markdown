@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Extracting Whitelisted Paths from Windows Defender ASR Rules"
-date:   2022-06-23 01:30:00 -0600
+date:   2022-06-22 00:00:00 -0600
 categories: security windows lsass credguard asr red-team
 permalink: /extracting-asr-rules/
 ---
