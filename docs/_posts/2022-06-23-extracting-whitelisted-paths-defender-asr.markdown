@@ -14,9 +14,9 @@ For many red teams, lsass dumps may have fallen out of popularity with the pleth
 
 So, how do you go about dumping lsass.exe on a box protected with MDE and ASR? Well, fortunately you can leverage a variety of whitelisted paths within the Defender ASR rules that help you achieve this. After finding a whitelisted exclusion path for the ASR rule you want to bypass, simply run your executable from that path and Defender will be none the wiser!
 
-Windows Defender signatures/rules are stored in VDM containers. It's possible to use a tool such as WDExtract to decrypt and extract all the PE images from these containers. By analyzing the extracted VDM you can pull whitelisted exclusion paths for ASR rules.
-
 # Extracting Whitelisted Exclusions from Defender Signature Updates
+
+Windows Defender signatures/rules are stored in VDM containers. It's possible to use a tool such as WDExtract to decrypt and extract all the PE images from these containers. By analyzing the extracted VDM you can pull whitelisted exclusion paths for ASR rules.
 
 I will now demonstrate a very quick, hacky way to quickly get an updated list of potential exclusion paths for particular ASR rules.
 
