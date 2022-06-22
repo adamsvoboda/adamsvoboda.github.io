@@ -12,7 +12,7 @@ Recently I was presented with a scenario where I wanted to dump lsass.exe on a m
 
 For many red teams, lsass dumps may have fallen out of popularity with the plethora of other options we have to acquire credentials and perform lateral movement. When I need to make it happen, my first choice for lsass dumps these days is usually [HandleKatz](https://github.com/codewhitesec/HandleKatz), because it's still pretty undetected by many EDR products (MDE/BitDefender/Cylance/etc). 
 
-So, how do you go about dumping lsass.exe on a box protected with MDE and ASR? Well, fortunately you can leverage a variety of whitelisted paths within the Defender ASR rules that help you achieve this. After finding a whitelisted exclusion path for the ASR rule you want to bypass, simply run your executable from that path and Defender will be none the wiser!
+So, how do you go about dumping lsass.exe on a box protected with MDE and ASR? Well, fortunately you can leverage a variety of whitelisted paths within the Defender ASR rules that help you achieve this. After finding a whitelisted exclusion path for the ASR rule you want to bypass, simply run your executable from that path!
 
 # Extracting Whitelisted Exclusions from Defender Signature Updates
 
