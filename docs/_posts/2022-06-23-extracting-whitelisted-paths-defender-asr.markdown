@@ -6,7 +6,7 @@ categories: security windows lsass credguard asr red-team
 permalink: /extracting-whitelisted-paths-from-windows-defender-asr-rules/
 ---
 
-# Dumping LSASS in 2022
+# Background
 
 Recently I was presented with a scenario where I wanted to dump lsass.exe on a machine protected by Microsoft Defender for Endpoint (ATP) with the ASR rule to prevent lsass.exe dumps enabled.
 
