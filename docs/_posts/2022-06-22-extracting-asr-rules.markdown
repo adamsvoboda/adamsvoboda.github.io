@@ -8,7 +8,7 @@ permalink: /extracting-asr-rules/
 
 # Background
 
-Recently I was presented with a scenario where I wanted to dump lsass.exe on a machine protected by Microsoft Defender for Endpoint (ATP) with the ASR rule to prevent lsass.exe dumps enabled.
+Recently I was presented with a scenario where I wanted to dump lsass.exe on a machine protected by Microsoft Defender for Endpoint (MDE/ATP) with the ASR rule to prevent lsass.exe dumps enabled.
 
 For many red teams, lsass dumps may have fallen out of popularity with the plethora of other options we have to acquire credentials and perform lateral movement. When I need to make it happen, my first choice for lsass dumps these days is usually [HandleKatz](https://github.com/codewhitesec/HandleKatz), because it's still pretty undetected by many EDR products (MDE/BitDefender/Cylance/etc). 
 
