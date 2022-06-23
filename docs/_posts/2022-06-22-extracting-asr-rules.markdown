@@ -16,7 +16,7 @@ So, how do you go about dumping lsass.exe on a box protected with MDE and ASR? W
 
 # Extracting Whitelisted Exclusions from Defender Signature Updates
 
-Windows Defender signatures/rules are stored in VDM containers. It's possible to use a tool such as WDExtract to decrypt and extract all the PE images from these containers. By analyzing the extracted VDM you can pull whitelisted exclusion paths for ASR rules.
+Windows Defender signatures/rules are stored in VDM containers. Many of them are just Lua script files. It's possible to use a tool such as WDExtract to decrypt and extract all the PE images from these containers. By analyzing the extracted VDM you can pull whitelisted exclusion paths for ASR rules.
 
 I will now demonstrate a very quick, hacky way to quickly get an updated list of potential exclusion paths for particular ASR rules.
 
@@ -98,7 +98,7 @@ c:\windows\SysWOW64\wbem\WmiPrvSE.exe
 
 To take it a step further, you can actually read the lua scripts by decompiling them after extraction with a tool such as [MpLua converter](https://github.com/commial/experiments/tree/master/windows-defender/lua). This will allow you to more clearly see how the rule logic works.
 
-I recommend the [great research by hfiref0x here](https://github.com/commial/experiments/tree/master/windows-defender/ASR).
+I strongly recommend exploring the [great research by hfiref0x here](https://github.com/commial/experiments/tree/master/windows-defender/ASR) for more details!
 
 # Credits
 - [Originally inspired by a tweet from _xpn_ on ASR](https://twitter.com/_xpn_/status/1491557187168178176)
