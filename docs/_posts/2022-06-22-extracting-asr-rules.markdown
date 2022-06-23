@@ -6,6 +6,8 @@ categories: security windows lsass credguard asr red-team
 permalink: /extracting-asr-rules/
 ---
 
+| This blog post was made possible by the fantastic work and research done by [@commail](https://twitter.com/commial) which you can [read here](https://github.com/commial/experiments/tree/master/windows-defender/ASR).
+
 # Background
 
 Recently I was presented with a scenario where I wanted to dump lsass.exe on a machine protected by Microsoft Defender for Endpoint (MDE/ATP) with the ASR rule to prevent lsass.exe dumps enabled.
