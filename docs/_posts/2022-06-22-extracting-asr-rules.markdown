@@ -49,7 +49,9 @@ Search for the GUID of the ASR rule you want to investigate:
 Scroll down slightly to see the list of exclusions and extract the data:
 ![](/assets/images/whitelist-data.png)
 
-It's important to keep in mind that the list of paths you may see here in the hex dump are not always exclusions. They can be part of other paths listed for ASR rules such as Monitored Locations. You'll need to do some testing/investigating to confirm if you are just naivley using content from the hex dump.
+_It's important to keep in mind that the list of paths you may see here in the hex dump are not always exclusions. They can be part of other paths listed for ASR rules such as Monitored Locations._
+
+You'll need to do some testing/investigating to confirm if you are just naivley using content from the hex dump. Scroll down to see a link to a GitHub repository that includes this already extracted data for you to browse.
 
 Ultimately, this gives us a list of excluded paths that are allowed to perform lsass.exe dumps even with the ASR rule enabled:
 
