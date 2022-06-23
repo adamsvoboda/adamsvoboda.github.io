@@ -98,7 +98,7 @@ c:\windows\SysWOW64\wbem\WmiPrvSE.exe
 
 To take it a step further, you can actually read the lua scripts by decompiling them after extraction with a tool such as [MpLua converter](https://github.com/commial/experiments/tree/master/windows-defender/lua). This will allow you to more clearly see how the rule logic works.
 
-I strongly recommend exploring the [great research by hfiref0x here](https://github.com/commial/experiments/tree/master/windows-defender/ASR) for more details!
+I strongly recommend exploring the [great research by commail here](https://github.com/commial/experiments/tree/master/windows-defender/ASR) for more details!
 
 # Credits
 - [Originally inspired by a tweet from _xpn_ on ASR](https://twitter.com/_xpn_/status/1491557187168178176)
