@@ -29,6 +29,8 @@ Here is [a link to the particular ruleset on MSDN](https://docs.microsoft.com/en
 This rule can be enabled on your machine with the following PowerShell script:
 `Set-MpPreference -AttackSurfaceReductionRules_Ids 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2 -AttackSurfaceReductionRules_Actions Enabled`
 
+# The Hacky Way
+
 First, we need to locate the Defender signature files. You can usually find these in the following location:
 `C:\ProgramData\Microsoft\Windows Defender\Definition Updates\Backup`
 
@@ -97,6 +99,8 @@ c:\windows\system32\WerFaultSecure.exe
 c:\windows\system32\wbem\WmiPrvSE.exe
 c:\windows\SysWOW64\wbem\WmiPrvSE.exe
 ```
+
+# Decompiling the Lua Scripts
 
 To take it a step further, you can actually read the lua scripts by decompiling them after extraction with a tool such as [MpLua converter](https://github.com/commial/experiments/tree/master/windows-defender/lua). This will allow you to more clearly see how the rule logic works, better decipher path exclusions vs other listed paths, etc.
 
