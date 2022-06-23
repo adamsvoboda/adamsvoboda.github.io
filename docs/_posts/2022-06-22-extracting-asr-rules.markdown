@@ -109,7 +109,7 @@ To take it a step further, you can actually read the lua scripts by decompiling 
 Justin Elze ([@HackingLZ](https://twitter.com/HackingLZ)) created a GitHub repository to group this extracted data for research. You can find the repository here: [https://github.com/HackingLZ/ExtractedDefender](https://github.com/HackingLZ/ExtractedDefender). 
 
 To take a look at the decompiled rule for the Block LSASS ASR, check it out here:
-[https://github.com/HackingLZ/ExtractedDefender/blob/main/asr/9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2)(https://github.com/HackingLZ/ExtractedDefender/blob/main/asr/9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2)
+[https://github.com/HackingLZ/ExtractedDefender/blob/main/asr/9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2](https://github.com/HackingLZ/ExtractedDefender/blob/main/asr/9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2)
 
 I strongly recommend exploring the [great research by commail here](https://github.com/commial/experiments/tree/master/windows-defender/ASR) for more details!
 
